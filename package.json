@@ -1,0 +1,19 @@
+{
+  "name": "epta-teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "packages/Back",
+    "packages/Front"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"cd packages/Back && npm run dev\" \"cd packages/Front && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
